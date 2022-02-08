@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class IfElseToplamSembolu {
+public class FourTransaction {
 
 	public static void main(String[] args) {
 		String answer = null, x = "";
@@ -48,5 +48,7 @@ public class IfElseToplamSembolu {
 		default:
 			JOptionPane.showMessageDialog(null, "Invalid operation", "Error", 2);
 		}
+
 	}
+
 }
