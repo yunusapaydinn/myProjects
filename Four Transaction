@@ -1,0 +1,52 @@
+import javax.swing.JOptionPane;
+
+public class IfElseToplamSembolu {
+
+	public static void main(String[] args) {
+		String answer = null, x = "";
+		int collection, extraction, multiplication,divide;
+		int total = 0;
+		int n1, n2, number = 0;
+		x = x + "1. Collection\n";
+		x = x + "2. Extraction\n";
+		x = x + "3. Multiplication\n";
+		x = x + "4. Divide\n";
+		
+		n1 = Integer.parseInt(JOptionPane.showInputDialog("Number 1:"));
+		n2 = Integer.parseInt(JOptionPane.showInputDialog("Number 2:"));
+		
+		number = Integer.parseInt(JOptionPane.showInputDialog(null, x, "Selection", 1));
+
+		
+
+		switch (number) {
+		case 1: {
+			total = n1 + n2;
+			answer = "Collection= " + total;
+			JOptionPane.showMessageDialog(null, answer, "Four Transactions", 1);
+			break;
+		}
+		case 2: {
+			extraction = n1 - n2;
+			answer = "Extraction= " + extraction;
+			JOptionPane.showMessageDialog(null, answer, "Four Transactions", 1);
+			break;
+		}
+		case 3: {
+			multiplication = n1 * n2;
+			answer = "Multiplication= " + multiplication;
+			JOptionPane.showMessageDialog(null, answer, "Four Transactions", 1);
+			break;
+		}
+		case 4: {
+			divide = n1 / n2;
+			answer = "Divide= " + divide;
+			JOptionPane.showMessageDialog(null, answer, "Four Transactions", 1);
+			break;
+		}
+
+		default:
+			JOptionPane.showMessageDialog(null, "Invalid operation", "Error", 2);
+		}
+	}
+}
