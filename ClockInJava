@@ -1,0 +1,15 @@
+import java.util.Timer;
+public class Clock {
+
+	public static void main(String[] args) throws InterruptedException {
+		for(int hour=0;hour<1;hour++) {
+			for(int mn=0;mn<60;mn++) {
+				for(int sec=0;sec<60;sec++) {
+					System.out.printf("%d:%d:%d\n",hour,mn,sec);
+					Thread.sleep(1000);
+				}
+			}
+			System.out.println();
+		}
+	}
+}
