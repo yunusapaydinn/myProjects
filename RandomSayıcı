@@ -1,3 +1,4 @@
+
 public class IkiSayiArasindaListeleme {
 
 	public static void main(String[] args) {
@@ -7,13 +8,15 @@ public class IkiSayiArasindaListeleme {
 		System.out.println("1.sayi:"+rnd1);
 		System.out.println("2.sayi:"+rnd2);
 		if(rnd1<rnd2) {
+		for(int i=rnd1;i<=rnd2;i++) {
+			if(i%2==1)continue;
+			System.out.print(i+" ");
 			
-		for(int i=rnd1;i<=rnd2;i+=2) {
-			System.out.print(" "+i);
 			sayac++;}
 		}else {
-			for(int i=rnd2;i<=rnd1;i+=2) {
-				System.out.print(" "+i);
+			for(int i=rnd2;i<=rnd1;i++) {
+				if(i%2==1)continue;
+				System.out.print(i+" ");
 				sayac++;
 		}
 		}
